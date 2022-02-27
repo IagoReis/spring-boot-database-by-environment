@@ -1,0 +1,18 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  jackson:
+    default-property-inclusion: NON_NULL
+datasource:
+  mariadb:
+    url: jdbc:mariadb://localhost:33062/dbbyenvironment
+    username: root
+    password: my-secret-pw
+    driver-class-name: org.mariadb.jdbc.Driver
+  mysql:
+    url: jdbc:mysql://localhost:33061/dbbyenvironment
+    username: root
+    password: my-secret-pw
+    driver-class-name: com.mysql.cj.jdbc.Driver
